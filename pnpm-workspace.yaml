@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - proof
+# puppeteer comes with whatsapp-web.js; the channel runs the machine's own browser (executablePath), so its Chromium download is declined, not allowed.
+allowBuilds:
+  esbuild: true
+  puppeteer: false

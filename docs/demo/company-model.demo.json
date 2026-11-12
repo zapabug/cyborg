@@ -1,0 +1,28 @@
+{
+  "demo": "Demo Tours, made-up facts",
+  "enquiryFields": [
+    { "name": "tour", "description": "which tour the customer asks about" },
+    { "name": "date", "description": "the day they want to go" },
+    { "name": "party_size", "description": "how many people are in the group" }
+  ],
+  "commitmentPhrases": [],
+  "selfAssessment": false,
+  "profile": {
+    "business.name": "Demo Tours",
+    "tone.style": "Warm, relaxed and plain: a friendly person at the bookings desk, never pushy.",
+    "offer.items": [
+      { "name": "Coast Walk", "price": 40, "unit": "per person", "capacity": 8 },
+      { "name": "Mountain Day", "price": 65, "unit": "per person", "capacity": 6 }
+    ],
+    "offer.availability": { "days": [2, 4, 6], "closedDates": ["12-25", "01-01"] },
+    "rules.commitments": [
+      "never confirm a booking: the office confirms it",
+      "never take a payment or ask for card details"
+    ],
+    "faq.entries": [
+      { "q": "Is pick-up from the hotel included?", "a": "Yes, pick-up from your hotel is included in the price." },
+      { "q": "What should I bring?", "a": "Comfortable shoes, water, sun protection and a light jacket." },
+      { "q": "Can children come?", "a": "Yes, children from 8 years old can join the Coast Walk." }
+    ]
+  }
+}

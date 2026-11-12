@@ -1,0 +1,15 @@
+{
+  "start": "2026-11-01T09:00:00.000Z",
+  "steps": [
+    { "do": "customer", "chat": "<fill in: a chat reference from the config>", "text": "<fill in: a real question a customer asked>" },
+    { "do": "admin", "text": ".ooo <fill in: a short note, e.g. back 09:00 Monday>" },
+    { "do": "customer", "chat": "<fill in: the same chat reference>", "text": "<fill in: a follow-up that needs the office, e.g. is there room for 6 on Thursday>" },
+    { "do": "handoff", "chat": "<fill in: the same chat reference>" },
+    { "do": "review", "site": "<fill in: a site name>", "text": "<fill in: a real review that has a complaint>" },
+    { "do": "sheet" },
+    { "do": "advance", "minutes": 30 },
+    { "do": "staff", "chat": "<fill in: the same chat reference>", "text": "<fill in: what a person on your desk would really answer>" },
+    { "do": "admin", "text": ".back" },
+    { "do": "sheet" }
+  ]
+}

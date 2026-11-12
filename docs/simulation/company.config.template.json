@@ -1,0 +1,86 @@
+{
+  "language": "pt",
+  "id": "<fill in: a lower-case id for this company, e.g. my-desk>",
+  "name": "<fill in: the company's name>",
+  "mode": "shadow",
+  "store": {
+    "path": "./sim-store.sqlite",
+    "vaultPath": "./sim-vault.sqlite"
+  },
+  "inference": {
+    "baseUrl": "<fill in: the endpoint including /v1, e.g. http://127.0.0.1:8081/v1 or https://openrouter.ai/api/v1>",
+    "apiKeyEnv": "<fill in: the NAME of the environment variable that holds the key, e.g. OPENROUTER_API_KEY; delete this line for a local endpoint>",
+    "model": "<fill in: the model every handler uses unless you list one below>",
+    "handlers": {
+      "sales.handoff.card": {
+        "model": "<fill in: a different model for the handoff card, or delete the whole handlers block>"
+      }
+    }
+  },
+  "limits": {
+    "maxModelCallsPer24h": "<fill in: a number, the most model calls this company may make in 24 hours>"
+  },
+  "prices": {
+    "<fill in: the model name exactly as above>": {
+      "inputPerMillion": "<fill in: a number>",
+      "outputPerMillion": "<fill in: a number>",
+      "currency": "EUR"
+    }
+  },
+  "chat": {
+    "authorisedSenders": [
+      "<fill in: an opaque reference for who may give commands, e.g. owner-ref>"
+    ],
+    "originChannel": "origin-chat",
+    "roles": {
+      "<fill in: a customer chat reference, e.g. chat-1>": "reply",
+      "<fill in: the admin chat reference, e.g. ops-1>": "ops"
+    }
+  },
+  "modules": {
+    "sales": {
+      "enquiryFields": [
+        {
+          "name": "<fill in: lower_case_name, e.g. tour_or_service>",
+          "description": "<fill in: what the customer message tells you here>"
+        }
+      ],
+      "persona": {
+        "name": "<fill in: a first name for the assistant, or delete this line>",
+        "disclosure": "first_message"
+      },
+      "humanClaimPhrases": [
+        "<fill in: a phrase in your customers' language that would mean the bot claims to be a person, or delete this line>"
+      ]
+    },
+    "feedback": {},
+    "enabledHandlers": {
+      "sales": [
+        "sales.enquiry.intake",
+        "sales.enquiry.reply_draft",
+        "sales.handoff.card"
+      ]
+    }
+  },
+  "office": {
+    "timezone": "<fill in: an IANA name, e.g. Atlantic/Madeira>",
+    "hours": {
+      "mon": [
+        "<fill in: HH:MM-HH:MM, e.g. 09:00-13:00>",
+        "14:00-18:00"
+      ],
+      "tue": [
+        "09:00-18:00"
+      ]
+    },
+    "closedDates": [
+      "12-25",
+      "01-01"
+    ]
+  },
+  "wording": {
+    "onDuty": "<fill in: what the bot is told when the office is staffed, or delete the whole wording block to keep the English default>",
+    "outOfOffice": "<fill in: what the bot is told when nobody is in>",
+    "outOfOfficeWithNote": "<fill in: the same with {note} where the staff note or the time the office is back goes>"
+  }
+}

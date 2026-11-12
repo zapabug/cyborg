@@ -1,0 +1,19 @@
+# DEMO sheet: a made-up business for trying the tailoring, not a real one
+Name: Demo Studio
+Tone: friendly and plain, in short full sentences
+Where: 1 Demo Street
+Hours: Mon-Sat 09:00-19:00
+Payment: cash or card
+
+Services:
+- Short cut | 20 EUR | 30 min
+- Long cut | from 30 EUR | 45 min
+- Colour | from 55 EUR | about 2 hours
+
+Questions:
+- Do I need to book? | Yes, please send the day and time you would like and the team will confirm.
+- Do you take children? | Yes, children are welcome.
+
+Never:
+- confirm an appointment: the team confirms it
+- give a discount

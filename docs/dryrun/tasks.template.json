@@ -1,0 +1,8 @@
+[
+  {
+    "text": "<fill in: a real message a customer sent, copied as it came>",
+    "expectFields": [],
+    "mustInclude": [],
+    "mustNotInclude": []
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "note": "WZP-24: which cyborg handler does each task of the intake questionnaire (intake-form/intake/form-data.js). It is data, not code (MOD-6). `match` is a phrase found in the task's title. availability: exists = a handler does it today; planned = a module of this feat will (milestone given); never_automatic = never automatic (HR-1, ADM-13); not_covered = no handler and none planned. `for` is the kind of chat a task is done in: reply (customers), monitor (team), ops (the office); the picker offers a chat the tasks of its role.",
+  "tasks": [
+    {
+      "match": "Answering customer questions",
+      "handlers": [
+        "sales.enquiry.reply_draft"
+      ],
+      "availability": "exists",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Giving prices and quotes",
+      "handlers": [
+        "sales.enquiry.reply_draft"
+      ],
+      "availability": "exists",
+      "note": "a draft states only prices in the profile; a computed total is W6",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Checking availability",
+      "handlers": [
+        "sales.enquiry.reply_draft"
+      ],
+      "availability": "exists",
+      "note": "running days and closed dates are checked; seats left need a booking record (W6)",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Taking a booking or an order",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W6",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Questions nobody has written an answer for",
+      "handlers": [
+        "sales.handoff.card"
+      ],
+      "availability": "exists",
+      "note": "the office card; the answer relay is W5",
+      "for": [
+        "reply",
+        "ops"
+      ]
+    },
+    {
+      "match": "Following up customers who went quiet",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Reminders before the service",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Changes and cancellations",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Taking payment",
+      "handlers": [],
+      "availability": "never_automatic",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Reviews and complaints",
+      "handlers": [
+        "feedback.review.complaints"
+      ],
+      "availability": "exists",
+      "note": "complaints are read; asking for a review is not built",
+      "for": [
+        "reply"
+      ]
+    },
+    {
+      "match": "Messages after hours",
+      "handlers": [
+        "sales.handoff.card"
+      ],
+      "availability": "exists",
+      "note": "the office schedule and the out-of-office toggle",
+      "for": [
+        "reply",
+        "ops"
+      ]
+    },
+    {
+      "match": "Planning the day for the team",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "for": [
+        "monitor",
+        "ops"
+      ]
+    },
+    {
+      "match": "Staff reporting something unusual",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "for": [
+        "monitor",
+        "ops"
+      ]
+    },
+    {
+      "match": "Keeping the website and listings up to date",
+      "handlers": [],
+      "availability": "not_covered",
+      "for": []
+    },
+    {
+      "match": "Vehicle inspections, insurance and servicing",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "FL1",
+      "note": "feat-fleet.md: deadlines, history and reminders (FL1), the drivers chat by key words (FL3)",
+      "for": [
+        "monitor",
+        "ops"
+      ]
+    },
+    {
+      "match": "Licences, equipment checks and other due dates",
+      "handlers": [],
+      "availability": "planned",
+      "milestone": "W7",
+      "note": "not covered by the fleet module (vehicles only); a general due-dates module is not specified",
+      "for": [
+        "ops"
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "pattern": "phone|telephone|telefone|call",
+      "label": "phone calls"
+    },
+    {
+      "pattern": "e-?mail|mail",
+      "label": "email"
+    },
+    {
+      "pattern": "website|web site|site|booking form|formul",
+      "label": "website"
+    },
+    {
+      "pattern": "instagram",
+      "label": "Instagram"
+    },
+    {
+      "pattern": "facebook|messenger",
+      "label": "Facebook"
+    },
+    {
+      "pattern": "tripadvisor|booking\\.com|getyourguide|viator|airbnb|booking sites?",
+      "label": "booking sites"
+    },
+    {
+      "pattern": "agenc|partner|hotel",
+      "label": "agencies and partners"
+    }
+  ]
+}

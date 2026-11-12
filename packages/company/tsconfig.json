@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist" },
+  "include": ["src/**/*.ts", "bin/**/*.ts", "test/**/*.ts"],
+  "references": [
+    { "path": "../core" }, { "path": "../gateway" }, { "path": "../module-admin" }, { "path": "../module-bookings" }, { "path": "../module-feedback" }, { "path": "../module-maintenance" },
+    { "path": "../module-sales" }, { "path": "../profile" }, { "path": "../store-sqlite" }
+  ]
+}

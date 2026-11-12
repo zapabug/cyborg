@@ -1,0 +1,16 @@
+{
+  "name": "@cyborg/channel-whatsapp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@cyborg/company": "workspace:*",
+    "@cyborg/core": "workspace:*",
+    "@cyborg/dashboard": "workspace:*",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.7"
+  },
+  "devDependencies": { "@types/qrcode-terminal": "^0.12.2" }
+}

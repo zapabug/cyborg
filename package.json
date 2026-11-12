@@ -1,0 +1,35 @@
+{
+  "name": "cyborg",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@12.16.1",
+  "scripts": {
+    "typecheck": "tsc -b",
+    "test": "node --import tsx --test \"packages/*/test/**/*.test.ts\" \"proof/test/**/*.test.ts\"",
+    "check": "pnpm typecheck && pnpm test",
+    "capability": "tsx packages/gateway/bin/capability.ts",
+    "import-profile": "tsx packages/profile/bin/import.ts",
+    "check-fact": "tsx packages/profile/bin/check.ts",
+    "proof": "tsx proof/bin/run.ts",
+    "digest": "tsx packages/store-sqlite/bin/digest.ts",
+    "dryrun": "tsx proof/bin/dryrun.ts",
+    "wazaa-script": "tsx proof/bin/wazaa-script.ts",
+    "db": "tsx packages/store-sqlite/bin/db.ts",
+    "usage": "tsx packages/store-sqlite/bin/usage.ts",
+    "company": "tsx packages/company/bin/company.ts",
+    "simulate": "tsx packages/company/bin/simulate.ts",
+    "dashboard": "tsx packages/dashboard/bin/dashboard.ts",
+    "testchat": "tsx packages/dashboard/bin/testchat.ts",
+    "intake": "tsx packages/company/bin/intake.ts",
+    "tailor": "tsx packages/company/bin/tailor.ts",
+    "new-customer": "tsx packages/company/bin/new-customer.ts",
+    "research": "tsx packages/company/bin/research.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "workspaces": ["packages/*", "proof"]
+}

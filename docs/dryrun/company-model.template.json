@@ -1,0 +1,25 @@
+{
+  "enquiryFields": [
+    { "name": "<fill in: lower_case_name, e.g. tour_or_service>", "description": "<fill in: what the customer message tells you here>" },
+    { "name": "<fill in: e.g. date>", "description": "<fill in>" },
+    { "name": "<fill in: e.g. party_size>", "description": "<fill in>" }
+  ],
+  "commitmentPhrases": [],
+  "selfAssessment": false,
+  "profile": {
+    "business.name": "<fill in: how the business names itself to customers>",
+    "tone.style": "<fill in: how the desk talks, in one or two lines>",
+    "offer.items": [
+      { "name": "<fill in: product or service>", "price": "<fill in: a number, no currency symbol>", "unit": "per person", "capacity": "<fill in: a number, or delete this line>" }
+    ],
+    "offer.availability": { "days": "<fill in: the weekday numbers you RUN, 0 = Sunday, e.g. [1,3,5]>", "closedDates": ["12-25", "01-01"] },
+    "rules.commitments": ["<fill in: things the bot may never promise, one per line>"],
+    "faq.entries": [
+      { "q": "<fill in: a question customers really ask>", "a": "<fill in: the answer you give>" }
+    ],
+    "sales.criteria": [
+      { "id": "<fill in: e.g. knows_what_they_want>", "description": "<fill in: what makes an enquiry a fit>" }
+    ],
+    "sales.followup_after_hours": "<fill in: a number, or delete this line>"
+  }
+}

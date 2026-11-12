@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.sqlite
+*.sqlite-journal
+.env
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite.bak-*
+*.vault
+# ARC-15: each customer is a repository of its own inside this folder; its data and files never enter the framework's repository

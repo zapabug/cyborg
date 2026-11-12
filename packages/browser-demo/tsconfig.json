@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "../..", "outDir": "dist", "lib": ["ES2023", "DOM"], "types": ["node"], "resolveJsonModule": true },
+  "include": ["src/**/*.ts", "test/**/*.ts", "../../docs/demo/company-model.demo.json"],
+  "references": [{ "path": "../company" }, { "path": "../core" }, { "path": "../gateway" }, { "path": "../module-bookings" }, { "path": "../module-sales" }, { "path": "../profile" }]
+}

@@ -1,0 +1,39 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/store-sqlite"
+    },
+    {
+      "path": "packages/gateway"
+    },
+    {
+      "path": "packages/profile"
+    },
+    {
+      "path": "packages/module-sales"
+    },
+    { "path": "packages/module-bookings" },
+    { "path": "packages/browser-demo" },
+    { "path": "packages/module-maintenance" },
+    {
+      "path": "proof"
+    },
+    {
+      "path": "packages/module-admin"
+    },
+    {
+      "path": "packages/module-feedback"
+    },
+    {
+      "path": "packages/company"
+    },
+    {
+      "path": "packages/dashboard"
+    },
+    { "path": "packages/channel-whatsapp" }
+  ]
+}

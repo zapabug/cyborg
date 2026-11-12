@@ -1,0 +1,15 @@
+{
+  "name": "@cyborg/proof",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@cyborg/company": "workspace:*",
+    "@cyborg/core": "workspace:*",
+    "@cyborg/gateway": "workspace:*",
+    "@cyborg/module-sales": "workspace:*",
+    "@cyborg/profile": "workspace:*",
+    "@cyborg/store-sqlite": "workspace:*"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@cyborg/company",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": { ".": "./src/index.ts", "./bookings": "./src/bookings.ts" },
+  "dependencies": {
+    "@cyborg/core": "workspace:*",
+    "@cyborg/gateway": "workspace:*",
+    "@cyborg/module-admin": "workspace:*",
+    "@cyborg/module-bookings": "workspace:*",
+    "@cyborg/module-feedback": "workspace:*",
+    "@cyborg/module-maintenance": "workspace:*",
+    "@cyborg/module-sales": "workspace:*",
+    "@cyborg/profile": "workspace:*",
+    "@cyborg/store-sqlite": "workspace:*",
+    "zod": "4.6.7"
+  }
+}

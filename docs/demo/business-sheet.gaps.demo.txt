@@ -1,0 +1,12 @@
+# DEMO sheet with gaps: a made-up business, written to show what is read, what is not, and what is asked next
+Name: Demo Studio
+open whenever
+Hours: Mon-Sat 09:00-19:00
+Parking: free in the street behind
+
+Services:
+- Short cut | 20 EUR | 30 min
+- Colour | from 55 EUR
+
+Questions:
+- Do I need to book?

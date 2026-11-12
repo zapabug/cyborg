@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist" },
+  "include": ["src/**/*.ts", "bin/**/*.ts", "test/**/*.ts"],
+  "references": [{ "path": "../core" }, { "path": "../company" }, { "path": "../store-sqlite" }, { "path": "../module-sales" }]
+}
